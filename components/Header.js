@@ -43,12 +43,12 @@ export default function Header() {
           <input
             type="text"
             placeholder="Comece sua busca"
-            className=" placeholder-zinc-700 outline-none flex-grow md:w-4/5"
+            className=" placeholder-zinc-700 outline-none flex-grow w-4/5"
           />
-          <div className="flex md:w-1/5 h-8 justify-end">
+          <div className="flex w-1/5 h-8 mx-2 items-center justify-end">
             <HiOutlineSearch
-              className="h-7 md:h-8 min-w-min bg-rose-500 text-white rounded-full p-2 md:p-2 cursor-pointer
-         md:mx-2 group hover:bg-rose-400"
+              className="h-7 md:h-8 min-w-min bg-rose-500 text-white rounded-full p-2 cursor-pointer
+         group hover:bg-rose-400"
             />
           </div>
         </div>
