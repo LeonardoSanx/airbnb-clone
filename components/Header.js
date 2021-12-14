@@ -47,7 +47,7 @@ export default function Header() {
           />
           <div className="flex w-1/5 h-8 mx-2 items-center justify-end">
             <HiOutlineSearch
-              className="h-7 md:h-8 min-w-min bg-rose-500 text-white rounded-full p-2 cursor-pointer
+              className="h-7 md:h-8 w-7 md:w-8 min-w-min bg-rose-500 text-white rounded-full p-2 cursor-pointer
          group hover:bg-rose-400"
             />
           </div>
