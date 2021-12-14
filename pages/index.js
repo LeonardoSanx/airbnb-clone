@@ -11,11 +11,15 @@ export default function Home({ exploreData, cardsData }) {
     <div className="">
       <Head>
         <title>Leo Airbnb</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.icon" />
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1 viewport-fit=cover"
+        />
       </Head>
       <Header />
       <Banner />
-      <main className="max-w-7xl mx-auto px-8 sm:px-16">
+      <main className="w-full md:max-w-7xl mx-auto px-8 sm:px-16">
         <section className="pt-6">
           <h2 className="text-xl sm:text-2xl md:text-4xl font-semibold sm:pb-2 md:pb-5">
             Explore as proximidades

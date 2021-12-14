@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Banner() {
   return (
-    <div className="relative h-[300px] sm:h-[400px] md:h-[500px] xl:h-[600px] 2xl:h-[700px]">
+    <div className="relative h-[300px] sm:h-[400px] md:h-[500px] xl:h-[600px] 2xl:h-[700px] w-full">
       <div className="flex md:hidden">
         <Image
           src="https://a0.muscache.com/im/pictures/ce7d8ae6-977b-4031-b800-762ac4daf347.jpg?im_w=960"
