@@ -5,31 +5,36 @@ import {
   HiOutlineMenu,
   HiUserCircle,
 } from "react-icons/hi";
+import { useState } from "react";
 
 export default function Header() {
+  const [searchInput, setSearchInput] = useState("");
+
   return (
     <header
       className="sticky top-0 z-50 flex shadow-md p-4
-     bg-white w-full md:px-10"
+     bg-white w-full md:px-10 justify-end"
     >
       {/* left */}
-      <div className="relative w-1/12 min-w-min md:w-1/3 flex items-center cursor-pointer my-auto">
-        <div className="hidden md:flex h-8">
+      <div className="relative w-1/12 min-w-min md:w-1/3 flex items-centermy-auto">
+        <div className="relative hidden md:flex w-32 ">
           <Image
             src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_B%C3%A9lo.svg"
             alt="airbnb logo"
             layout="fill"
             objectFit="contain"
             objectPosition="left"
+            className="cursor-pointer"
           />
         </div>
-        <div className="flex md:hidden h-8">
+        <div className="relative flex md:hidden w-10">
           <Image
             src="https://ebenezersuites.com/wp-content/uploads/2016/06/airbnb-logo.png"
             alt="airbnb logo"
             layout="fill"
             objectFit="contain"
             objectPosition="left"
+            className="cursor-pointer"
           />
         </div>
       </div>
@@ -41,16 +46,15 @@ export default function Header() {
       border shadow-md pl-5 backdrop-blur-sm bg-white bg-opacity-10 text-sm max-w-[16rem]"
         >
           <input
+            value={searchInput}
+            onChange={(e) => setSearchInput(e.target.value)}
             type="text"
             placeholder="Comece sua busca"
             className=" placeholder-zinc-700 outline-none flex-grow w-4/5"
           />
           <div className="flex w-1/5 h-8 mx-2 items-center justify-end">
-            <div className="flex rounded-full p-2 bg-red-500 items-center">
-              <HiOutlineSearch
-                className="text-sm md:text-base text-white cursor-pointer
-         group hover:bg-rose-400"
-              />
+            <div className="flex rounded-full p-2 bg-red-500 items-center cursor-pointer hover:bg-rose-400">
+              <HiOutlineSearch className="text-sm md:text-base text-white" />
             </div>
           </div>
         </div>
@@ -67,6 +71,12 @@ export default function Header() {
           <HiUserCircle className="text-lg sm:text-xl md:text-2xl cursor-pointer" />
         </div>
       </div>
+
+      {searchInput && (
+        <div className="block">
+          <h1>HELLO WORLD</h1>
+        </div>
+      )}
     </header>
   );
 }
