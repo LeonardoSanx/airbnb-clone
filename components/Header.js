@@ -46,10 +46,12 @@ export default function Header() {
             className=" placeholder-zinc-700 outline-none flex-grow w-4/5"
           />
           <div className="flex w-1/5 h-8 mx-2 items-center justify-end">
-            <HiOutlineSearch
-              className="h-7 md:h-8 w-7 md:w-8 min-w-min bg-rose-500 text-white rounded-full p-2 cursor-pointer
+            <div className="flex rounded-full p-2 bg-red-500 items-center">
+              <HiOutlineSearch
+                className="text-sm md:text-base text-white cursor-pointer
          group hover:bg-rose-400"
-            />
+              />
+            </div>
           </div>
         </div>
       </div>
