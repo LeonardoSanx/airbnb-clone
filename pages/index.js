@@ -10,12 +10,36 @@ export default function Home({ exploreData, cardsData }) {
   return (
     <div className="">
       <Head>
-        <title>Leo Airbnb</title>
+        <title>Airbnb Leonardo - Clone</title>
         <link rel="icon" href="/favicon.icon" />
+        <meta
+          name="description"
+          content="Clone do Airbnb, projeto frontend com design responsivo, API"
+        />
+        <meta name="author" content="Leonardo Machado" />
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1 viewport-fit=cover"
         />
+        <meta name="twitter:title" content="Airbnb Leonardo - Clone" />
+        <meta
+          name="twitter:description"
+          content="Clone do Airbnb, projeto frontend com design responsivo, API"
+        />
+        <meta name="twitter:image" content="../images/twitter.png" />
+        <meta
+          name="image"
+          property="og:image"
+          content="../images/twitter.png"
+          alt="Airbnb intro image"
+        />
+        <meta name="og:title" content="Airbnb Leonardo - Clone" />
+        <meta
+          name="og:description"
+          content="Clone do Airbnb, projeto frontend com design responsivo, API"
+        />
+        <meta name="og:url" content="https://airbnb-leonardo.vercel.app/" />
+        <meta name="og:type" content="article" />
       </Head>
       <Header />
       <Banner />
